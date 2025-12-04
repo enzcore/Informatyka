@@ -1,0 +1,12 @@
+def rozklad_na_czynniki(n):
+    czynnik = 2
+    czynniki = []
+
+    while n > 1:
+        if n % czynnik == 0:
+            czynniki.append(czynnik)
+            n = n // czynnik
+        else:
+            czynnik += 1
+
+    return czynniki
