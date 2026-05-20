@@ -1,0 +1,11 @@
+liczba = int(input("Podaj liczbę całkowitą: "))
+ 
+print(f"Rozkład liczby {liczba} na czynniki pierwsze:")
+ 
+dzielnik = 2
+ 
+while liczba > 1:
+    while liczba % dzielnik == 0:
+        print(dzielnik)
+        liczba //= dzielnik
+    dzielnik += 1
