@@ -1,12 +1,11 @@
-def rozklad_na_czynniki(n):
-    czynnik = 2
-    czynniki = []
+liczba = int(input("Podaj liczbę całkowitą: "))
 
-    while n > 1:
-        if n % czynnik == 0:
-            czynniki.append(czynnik)
-            n = n // czynnik
-        else:
-            czynnik += 1
+ print(f"Rozkład liczby {liczba} na czynniki pierwsze:")
 
-    return czynniki
+ dzielnik = 2
+
+ while liczba > 1:
+ while liczba % dzielnik == 0:
+ print(dzielnik)
+ liczba //= dzielnik
+ dzielnik += 1
